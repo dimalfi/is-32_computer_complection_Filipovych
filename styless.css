@@ -1,0 +1,124 @@
+/* Глобальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Секція продуктів */
+#products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product-card .specs {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.product-card .specs li {
+    margin: 5px 0;
+}
+
+.product-card .buy-now {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card .buy-now:hover {
+    background-color: #555;
+}
+
+/* Селектори */
+
+/* Селектор тегу */
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Селектор класу */
+.price {
+    color: red;
+}
+
+/* Селектор ідентифікатора */
+#product1 {
+    background-color: #f9f9f9;
+    border: 2px solid #ff0000;
+}
+
+/* Селектор атрибута */
+img[alt="Зображення ПК"] {
+    border: 1px solid #333;
+}
+
+/* Дочірній селектор */
+nav ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+/* Універсальний селектор */
+* {
+    box-sizing: border-box;
+}
