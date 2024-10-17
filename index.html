@@ -3,55 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин Комп'ютерів</title>
+    <title>Dominatech - Магазин Комп'ютерів</title>
     <link rel="stylesheet" href="./styless.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Ігрові ПК</a></li>
-                <li><a href="#">Кастомні ПК</a></li>
-                <li><a href="#">Офісні ПК</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <img src="./Лого.webp" alt="Dominatech Logo" class="logo">
+            <h1>Dominatech</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Ігрові ПК</a></li>
+                    <li><a href="#">Кастомні ПК</a></li>
+                    <li><a href="#">Офісні ПК</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>      
-        <h1>Магазин Комп'ютерів</h1>
-    <section id="products">
-        <div class="product-card" id="product1">
-            <img src="https://versum.ua/image/cache/catalog/products/pc/gamemax-et-211-450w-2u3-1-669x669.png" alt="Зображення ПК">
-            <h2>VERSUM Archlich v2.2</h2>
-            <p class="price">34,587 грн</p>
-            <ul class="specs">
-                <li>Процесор: Ryzen 5 5600</li>
-                <li>Відеокарта: RTX 3060 12GB</li>
-                <li>ОЗП: 16GB DDR4</li>
-                <li>Накопичувач: SSD 1TB</li>
-            </ul>
-            <button class="buy-now">Купити</button>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Ласкаво просимо до Dominatech!</h2>
+            <p>Dominatech – це ваш надійний партнер у світі комп'ютерних технологій. Ми пропонуємо широкий асортимент ігрових, кастомних та офісних комп'ютерів за доступними цінами. Наші спеціалісти завжди готові допомогти вам у виборі найкращих рішень для вашого бізнесу або дому.</p>
+        </section>
+
+        <h2 class="product-heading">Наші Продукти</h2>
+
+        <div class="filter-button-container">
+            <button class="filter-button">Фільтр</button>
         </div>
 
-        <div class="product-card" id="product2">
-            <img src="https://via.placeholder.com/150" alt="Зображення ПК">
-            <h2>VERSUM Galaxy II v2.7</h2>
-            <p class="price">35,865 грн</p>
-            <ul class="specs">
-                <li>Процесор: Ryzen 5 5600</li>
-                <li>Відеокарта: RTX 4060 8GB</li>
-                <li>ОЗП: 16GB DDR4</li>
-                <li>Накопичувач: SSD 1TB</li>
-            </ul>
-            <button class="buy-now">Купити</button>
-        </div>
+        <section id="products">
+            <div class="product-card" id="product1">
+                <img src="https://versum.ua/image/cache/catalog/products/pc/gamemax-et-211-450w-2u3-1-669x669.png" alt="Зображення ПК">
+                <h2>VERSUM Archlich v2.2</h2>
+                <p class="price">34,587 грн</p>
+                <ul class="specs">
+                    <li>Процесор: Ryzen 5 5600</li>
+                    <li>Відеокарта: RTX 3060 12GB</li>
+                    <li>ОЗП: 16GB DDR4</li>
+                    <li>Накопичувач: SSD 1TB</li>
+                </ul>
+                <button class="buy-now">Купити</button>
+            </div>
+            <div class="product-card" id="product2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2MIIWQnq1wbsPjl8AKKXxxB3Vi0rmucmiA&s" alt="Зображення ПК">
+                <h2>VERSUM Galaxy II v2.7</h2>
+                <p class="price">35,865 грн</p>
+                <ul class="specs">
+                    <li>Процесор: Ryzen 5 5600</li>
+                    <li>Відеокарта: RTX 4060 8GB</li>
+                    <li>ОЗП: 16GB DDR4</li>
+                    <li>Накопичувач: SSD 1TB</li>
+                </ul>
+                <button class="buy-now">Купити</button>
+            </div>
 
-        <!-- Додайте більше продуктів за необхідністю -->
-    </section>
-    </main> 
+            <!-- Additional products for each existing product -->
+            <div class="product-card" id="product3">
+                <img src="https://it-blok.com.ua/image/cache/catalog/Korpusa/Gamemax%20Edge/1-268x268.png.pagespeed.ce.aKCPLcWy3L.png" alt="Зображення ПК">
+                <h2>VERSUM Storm v1.5</h2>
+                <p class="price">28,999 грн</p>
+                <ul class="specs">
+                    <li>Процесор: Intel i5 10400F</li>
+                    <li>Відеокарта: GTX 1650 4GB</li>
+                    <li>ОЗП: 8GB DDR4</li>
+                    <li>Накопичувач: SSD 512GB</li>
+                </ul>
+                <button class="buy-now">Купити</button>
+            </div>
+
+            <div class="product-card" id="product4">
+                <img src="https://api.technodom.kz/f3/api/v1/images/272/272/284092_1.jpg" alt="Зображення ПК">
+                <h2>VERSUM Blaze v3.0</h2>
+                <p class="price">42,799 грн</p>
+                <ul class="specs">
+                    <li>Процесор: Ryzen 7 5800X</li>
+                    <li>Відеокарта: RTX 3070 8GB</li>
+                    <li>ОЗП: 32GB DDR4</li>
+                    <li>Накопичувач: SSD 1TB</li>
+                </ul>
+                <button class="buy-now">Купити</button>
+            </div>
+          
+        </section>
+    </main>
+
     <footer>
+        <div class="reviews-section">
+            <h2>Відгуки</h2>
+            <div class="review">
+                <div class="review-rating">★★★★☆</div>
+                <p>Іван: "Чудовий сервіс, рекомендую!"</p>
+            </div>
+            <div class="review">
+                <div class="review-rating">★★★★★</div>
+                <p>Олена: "Купила ПК для роботи, все супер!"</p>
+            </div>
+        </div>
+        <p class="contact-info">Телефон: +380509111632
+            <a href="https://t.me/+VJ6LEQTk33YxMGRi" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png" alt="Telegram Icon" class="telegram-icon">
+            </a>
+        </p>
     </footer>
 </body>
-
 </html>
