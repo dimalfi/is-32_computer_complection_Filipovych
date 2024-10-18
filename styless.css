@@ -181,16 +181,16 @@ footer {
         text-align: center;
     }
 
-    /* Adjust product cards to one per row */
+    /* Display product cards in two columns */
     #products {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .product-card {
-        width: 80%; /* Increase width to take more space on tablet */
-        margin: 15px 0;
+        width: 48%; /* Adjust width to fit two cards in a row with spacing */
+        margin: 10px 0;
     }
 
     /* Adjust footer layout */
@@ -198,6 +198,7 @@ footer {
         text-align: center;
     }
 }
+
 
 /* Mobile version */
 @media screen and (max-width: 767px) {
