@@ -170,3 +170,86 @@ footer {
     padding: 10px;
     text-align: center;
 }
+/* Default styles are for desktop by default */
+
+/* Tablet version */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    /* Adjust header layout for tablet */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Adjust product cards to one per row */
+    #products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 80%; /* Increase width to take more space on tablet */
+        margin: 15px 0;
+    }
+
+    /* Adjust footer layout */
+    .contact-info {
+        text-align: center;
+    }
+}
+
+/* Mobile version */
+@media screen and (max-width: 767px) {
+    /* Adjust header layout for mobile */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    /* Stack navigation menu vertically */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Adjust welcome section text for mobile readability */
+    .welcome-section {
+        padding: 20px;
+    }
+
+    /* Make product cards stack vertically */
+    #products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%; /* Full width for better readability on mobile */
+        margin: 15px 0;
+    }
+
+    /* Footer adjustments */
+    .contact-info {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .telegram-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Desktop version (default, no media query needed) */
+/* Already styled appropriately in your CSS code, but you can add specific tweaks if necessary */
